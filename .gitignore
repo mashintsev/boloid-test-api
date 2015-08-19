@@ -3,3 +3,4 @@ logs_archive
 *.iml
 .idea
 upload
+testdb.*

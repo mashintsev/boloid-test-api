@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import ru.mashintsev.Application;
@@ -33,6 +34,7 @@ import static org.hamcrest.CoreMatchers.*;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
+@TestPropertySource("classpath:app.properties")
 @WebAppConfiguration
 @IntegrationTest("server.port:0")
 public class UserControllerTest {
