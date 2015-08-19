@@ -57,7 +57,6 @@ public class UserControllerTest {
                 .then()
                 .body("success", is(true))
                 .body("result", notNullValue(String.class));
-        ;
     }
 
     @Test
